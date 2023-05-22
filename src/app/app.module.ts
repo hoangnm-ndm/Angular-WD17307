@@ -8,6 +8,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { ProductsComponent } from './pages/admin/products/products.component';
+import { LayoutClientComponent } from './components/layouts/layout-client/layout-client.component';
+import { LayoutAdminComponent } from './components/layouts/layout-admin/layout-admin.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    DashboardComponent,
+    ProductsComponent,
+    LayoutClientComponent,
+    LayoutAdminComponent
   ],
   imports: [
     BrowserModule,
