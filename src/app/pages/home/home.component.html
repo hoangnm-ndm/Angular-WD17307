@@ -1,6 +1,9 @@
 <h1>Noi dung cua trang home</h1>
 <div class="container">
-  <div class="row" *ngIf="products && products.length > 0; else hahaha">
+  <div
+    class="row"
+    *ngIf="products && products.length > 0; else elseNotFoundProduct"
+  >
     <div class="col-4" *ngFor="let product of products">
       <div class="card" style="width: 18rem">
         <img
@@ -17,10 +20,12 @@
             Price:
             {{ product.price }}
           </p>
-          <a routerLink="/" class="btn btn-primary">View detail</a>
+          <a routerLink="/product/{{ product.id }}" class="btn btn-primary"
+            >View detail</a
+          >
         </div>
       </div>
     </div>
   </div>
-  <ng-template #hahaha>Không tìm thấy sản phầm nào!</ng-template>
+  <ng-template #elseNotFoundProduct>Không tìm thấy sản phầm nào!</ng-template>
 </div>

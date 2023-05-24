@@ -14,6 +14,7 @@ import { LayoutClientComponent } from './components/layouts/layout-client/layout
 import { LayoutAdminComponent } from './components/layouts/layout-admin/layout-admin.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { RegisterComponent } from './pages/register/register.component';
     LayoutAdminComponent,
     LoginComponent,
     RegisterComponent,
+    ProductDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
