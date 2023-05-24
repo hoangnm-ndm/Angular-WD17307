@@ -28,13 +28,10 @@ import { RegisterComponent } from './pages/register/register.component';
     LayoutClientComponent,
     LayoutAdminComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

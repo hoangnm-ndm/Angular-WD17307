@@ -1,6 +1,6 @@
 <h1>Noi dung cua trang home</h1>
 <div class="container">
-  <div class="row" *ngIf="products && products.length > 0">
+  <div class="row" *ngIf="products && products.length > 0; else hahaha">
     <div class="col-4" *ngFor="let product of products">
       <div class="card" style="width: 18rem">
         <img
@@ -22,4 +22,5 @@
       </div>
     </div>
   </div>
+  <ng-template #hahaha>Không tìm thấy sản phầm nào!</ng-template>
 </div>
