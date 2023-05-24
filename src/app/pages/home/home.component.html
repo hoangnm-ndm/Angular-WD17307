@@ -1,1 +1,25 @@
 <h1>Noi dung cua trang home</h1>
+<div class="container">
+  <div class="row" *ngIf="products && products.length > 0">
+    <div class="col-4" *ngFor="let product of products">
+      <div class="card" style="width: 18rem">
+        <img
+          src="{{ product.imgUrl }}"
+          class="card-img-top"
+          alt="{{ product.name }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">
+            {{ product.desc }}
+          </p>
+          <p class="card-text">
+            Price:
+            {{ product.price }}
+          </p>
+          <a routerLink="/" class="btn btn-primary">View detail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
