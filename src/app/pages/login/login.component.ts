@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   public name: string = 'Hoangnm';
+  public user = {};
   public handleClick() {
-    console.log('handleClick');
+    console.log(this.user);
   }
 }
